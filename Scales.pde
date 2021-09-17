@@ -1,8 +1,3 @@
-}
-
-
-
-
 
 void setup() {
   size(500, 500);  //feel free to change the size
@@ -14,8 +9,8 @@ void draw() {
  {
     for(int x = -50; x < 600; x = x + 50)
     {
-      scale1(250,250);
-      scale2(250,250);
+      scale1(x,y);
+      scale2(x,y);
     }
  }
 }
@@ -51,14 +46,14 @@ void scale1(int x, int y) {
 void scale2(int x, int y) 
   {
         //shifted upside down scale
-        fill(256,256,0);
+        fill(255,255,0);
         beginShape();
-        curveVertex(x+25, y+20);
-        curveVertex(x+25, y+20);
-        curveVertex(x,y+65);
-        curveVertex(x+50, y+65);
-        curveVertex(x+25, y+20);
-        curveVertex(x+25,y+20);
+        curveVertex(x+28, y+17);
+        curveVertex(x+28, y+17);
+        curveVertex(x+3,y+62);
+        curveVertex(x+47, y+62);
+        curveVertex(x+28, y+17);
+        curveVertex(x+28,y+17);
         endShape(CLOSE);
         
         //upside down inner
